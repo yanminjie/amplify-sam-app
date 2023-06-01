@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>CALL AN API</h1>
-        <button onClick={getApiMessage}>Call Lambda</button>
+        <button onClick={getApiMessage}>Call Lambda Test</button>
         <div>
           {showResult && <code>{JSON.stringify(apiMessage, null, 2)}</code>}
         </div>
