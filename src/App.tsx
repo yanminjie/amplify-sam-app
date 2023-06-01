@@ -13,7 +13,7 @@ function App() {
     //   mode: 'cors'
     // });
 
-    const response = await fetch("https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main", {
+    const response = await fetch("https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main/hello", {
       mode: 'cors'
     });
     
