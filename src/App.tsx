@@ -9,13 +9,13 @@ function App() {
 
     console.log(process.env.REACT_APP_ENDPOINT);
     
-    // const response = await fetch(`${process.env.REACT_APP_ENDPOINT}hello`, {
-    //   mode: 'cors'
-    // });
-
-    const response = await fetch("https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main/hello", {
+    const response = await fetch(`${process.env.REACT_APP_ENDPOINT}hello`, {
       mode: 'cors'
     });
+
+    // const response = await fetch("https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main/hello", {
+    //   mode: 'cors'
+    // });
     
     const responseData = await response.text();
     console.log(responseData)
