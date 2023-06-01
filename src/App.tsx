@@ -8,7 +8,12 @@ function App() {
   const getApiMessage = async () => {
 
     console.log(process.env.REACT_APP_ENDPOINT);
-    const response = await fetch(`${process.env.REACT_APP_ENDPOINT}hello`, {
+    
+    // const response = await fetch(`${process.env.REACT_APP_ENDPOINT}hello`, {
+    //   mode: 'cors'
+    // });
+
+    const response = await fetch("https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main", {
       mode: 'cors'
     });
     
