@@ -12,6 +12,8 @@ import axios from "axios";
 import { putCar, deleteCar } from "../api/apiEndPoint";
 import FormComponent from "./FormComponent";
 
+
+const { Title } = Typography;
 export interface Item {
   id: string;
   engineCyl: string;
@@ -256,6 +258,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <Title level={1}> Amplify + AWS SAM Application</Title>
       <Form form={form} component={false}>
         <Table
           components={{

@@ -1,4 +1,3 @@
-
 import { ConfigProvider, theme } from "antd";
 
 // import "./App.css";
@@ -6,7 +5,6 @@ import Home from "./components/Home";
 
 function App() {
   const { darkAlgorithm } = theme;
-
 
   console.log(`${process.env.REACT_APP_ENDPOINT}inventory`);
 
@@ -17,6 +15,7 @@ function App() {
           algorithm: darkAlgorithm,
         }}
       >
+        
         <Home />
       </ConfigProvider>
     </>
@@ -24,9 +23,6 @@ function App() {
 }
 
 export default App;
-
-
-
 
 // import React, { useState, useEffect } from 'react';
 // import './App.css';
@@ -58,7 +54,7 @@ export default App;
 //       headers: { },
 //       data : data
 //     };
-    
+
 //     axios(config)
 //     .then(function (response) {
 //       // console.log(JSON.stringify(response.data));
@@ -73,21 +69,19 @@ export default App;
 //   const getApiMessage = async () => {
 
 //     console.log(process.env.REACT_APP_ENDPOINT);
-    
+
 //     const response = await fetch(`${process.env.REACT_APP_ENDPOINT}inventory`, {
 //       mode: 'cors'
 //     });
-    
-    
+
 //     // console.log(JSON.stringify(response.data))
 //     const responseData = await response.text();
 //     // const responseData = await JSON.stringify(response);
 //     console.log(responseData)
 
 //     setShowResult(true);
-//     setApiMessage(responseData);  
+//     setApiMessage(responseData);
 //   };
-
 
 //   return (
 //     <div className="App">
