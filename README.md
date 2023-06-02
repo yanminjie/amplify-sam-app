@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# AMPLIFY + AWS SAM APPLICATION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello! Welcome to the Amplify + AWS SAM Full Stack Application project.
 
-## Available Scripts
+This project is aimed at providing a comprehensive guide and structure to build a full-stack application using AWS Amplify and AWS Serverless Application Model (SAM). We leverage the powerful features of these services to create a scalable, secure, and easily maintainable web application.
 
-In the project directory, you can run:
+## About the project
 
-### `npm start`
+AWS Amplify enables developers to develop and deploy cloud-powered mobile and web applications. It includes a broad set of tools and services that can create scalable, full stack applications, with a focus on simplicity and ease of use.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications. It extends AWS CloudFormation to provide a simplified way of defining the Amazon API Gateway APIs, AWS Lambda functions, and Amazon DynamoDB tables needed by your serverless application.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The combination of Amplify and AWS SAM allows developers to rapidly build and scale applications without worrying about managing servers. This project provides a ready-to-use template to bootstrap your next full stack application.
 
-### `npm test`
+## Project structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project is divided into two main sections:
 
-### `npm run build`
+1. Frontend (Amplify): This is where we design our user interfaces, authenticate users, manage user state, and interact with our backend resources. The frontend part is handled by AWS Amplify. [https://github.com/Ethanlloyd21/amplify-sam-app]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Backend (AWS SAM): This includes serverless functions (Lambda), API endpoints (API Gateway), and data storage (DynamoDB). The backend is managed using AWS SAM. [https://github.com/Ethanlloyd21/amplify-sam-app-backend]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Pre-requisite:
+1. Install Node.js
+2. AWS account
+3. Install AWS CLI
+4. Install AWS SAM
+5. Install Docker (optional)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
