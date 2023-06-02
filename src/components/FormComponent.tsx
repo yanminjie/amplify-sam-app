@@ -1,5 +1,4 @@
 import { Button, Form, Input, notification } from "antd";
-import { SmileOutlined } from "@ant-design/icons";
 import React, { useState } from "react";
 import { postCar } from "../api/apiEndPoint";
 
@@ -50,12 +49,6 @@ const FormComponent: React.FC = () => {
     formLayout === "horizontal"
       ? { wrapperCol: { span: 14, offset: 4 } }
       : null;
-
-  // const onFinish = (values: FormValueProps) => {
-  //   console.log("Received values of form: ", values);
-  //   postCar(values);
-  //   form.resetFields();
-  // };
 
   const onFinish = async (values: FormValueProps) => {
     console.log("Received values of form: ", values);

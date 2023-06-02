@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import {
-  Button,
   Form,
   Input,
   InputNumber,
@@ -13,7 +12,6 @@ import { putCar, deleteCar } from "../api/apiEndPoint";
 import FormComponent from "./FormComponent";
 
 
-const { Title } = Typography;
 export interface Item {
   id: string;
   engineCyl: string;
@@ -36,6 +34,8 @@ interface EditableCellProps extends React.HTMLAttributes<HTMLElement> {
   index: number;
   children: React.ReactNode;
 }
+
+const { Title } = Typography; //Typography for Ant Design
 
 const EditableCell: React.FC<EditableCellProps> = ({
   editing,
@@ -254,8 +254,6 @@ const Home: React.FC = () => {
     };
   });
 
-  // const testId = "5asxxx555d65";
-
   return (
     <>
       <Title level={1}> Amplify + AWS SAM Application</Title>
@@ -276,9 +274,6 @@ const Home: React.FC = () => {
         />
       </Form>
       <FormComponent />
-      {/* <Button type="primary" onClick={() => deleteCar(testId)}>
-        Post
-      </Button> */}
     </>
   );
 };
