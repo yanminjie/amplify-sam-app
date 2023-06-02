@@ -4,6 +4,8 @@ Hello! Welcome to the Amplify + AWS SAM Full Stack Application project.
 
 This project is aimed at providing a comprehensive guide and structure to build a full-stack application using AWS Amplify and AWS Serverless Application Model (SAM). We leverage the powerful features of these services to create a scalable, secure, and easily maintainable web application.
 
+The idea of this project is not to focus on the front end (UX/UI) design but rather on how to build an application using Amplify and AWS SAM.
+
 ## About the project
 
 AWS Amplify enables developers to develop and deploy cloud-powered mobile and web applications. It includes a broad set of tools and services that can create scalable, full stack applications, with a focus on simplicity and ease of use.
