@@ -58,7 +58,8 @@ function App() {
       mode: 'cors'
     });
     
-    const responseData = await response.text();
+    // const responseData = await response.text();
+    const responseData = await JSON.stringify(response);
     console.log(responseData)
 
     setShowResult(true);
