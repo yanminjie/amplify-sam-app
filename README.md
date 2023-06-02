@@ -25,7 +25,7 @@ The project is divided into two main sections:
 2. AWS account [https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html]
 3. Install AWS CLI using your command prompt [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions]
 4. Install AWS SAM using your command prompt [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html]
-5. Install Docker (optional)
+5. Install Docker (optional) [https://docs.docker.com/desktop/install/windows-install/]
 
 ## Front End code
 This project is to show the viewers how to create a full stack application using Amplify and SAM. For simplicity I will be copying the front end of my old project serverless-no-iac [https://github.com/Ethanlloyd21/serverless-no-iac] using create-react-app. 
@@ -645,3 +645,5 @@ function App() {
 
 export default App;
 ```
+
+### For the backend read me file please visit [https://github.com/Ethanlloyd21/amplify-sam-app-backend]
