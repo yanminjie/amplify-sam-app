@@ -28,8 +28,9 @@ import { ConfigProvider, theme } from "antd";
 
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import axios from "axios";
 
 export interface Item {
   id: string;
@@ -48,18 +49,39 @@ function App() {
   const [showResult, setShowResult] = useState(false);
   const [apiMessage, setApiMessage] = useState("");
 
+  useEffect(() => {
+
+    const data = '';
+    const config = {
+      method: 'get',
+      url: 'https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main/inventory',
+      headers: { },
+      data : data
+    };
+    
+    axios(config)
+    .then(function (response) {
+      // console.log(JSON.stringify(response.data));
+      console.log(response)
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  },[])
+
   const getApiMessage = async () => {
 
     console.log(process.env.REACT_APP_ENDPOINT);
     
-    
-
     const response = await fetch(`${process.env.REACT_APP_ENDPOINT}inventory`, {
       mode: 'cors'
     });
     
-    // const responseData = await response.text();
-    const responseData = await JSON.stringify(response);
+    
+    // console.log(JSON.stringify(response.data))
+    const responseData = await response.text();
+    // const responseData = await JSON.stringify(response);
     console.log(responseData)
 
     setShowResult(true);
