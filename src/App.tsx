@@ -9,7 +9,7 @@ function App() {
 
     console.log(process.env.REACT_APP_ENDPOINT);
     
-    const response = await fetch(`${process.env.REACT_APP_ENDPOINT}hello`, {
+    const response = await fetch(`${process.env.REACT_APP_ENDPOINT}inventory`, {
       mode: 'cors'
     });
 
