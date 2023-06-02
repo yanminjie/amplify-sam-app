@@ -1,5 +1,48 @@
+
+import { ConfigProvider, theme } from "antd";
+
+// import "./App.css";
+// import Home from "./components/Home";
+
+// function App() {
+//   const { darkAlgorithm } = theme;
+
+
+//   console.log(`${process.env.REACT_APP_ENDPOINT}hello`);
+
+//   return (
+//     <>
+//       <ConfigProvider
+//         theme={{
+//           algorithm: darkAlgorithm,
+//         }}
+//       >
+//         {/* <Home /> */}
+//       </ConfigProvider>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
+
 import React, { useState } from 'react';
 import './App.css';
+
+export interface Item {
+  id: string;
+  engineCyl: string;
+  engineSize: string;
+  maker: string;
+  model: string;
+  mpgCity: string;
+  mpgCombined: string;
+  mpgHighway: string;
+  rating: string;
+  year: string;
+}
 
 function App() {
   const [showResult, setShowResult] = useState(false);
@@ -9,13 +52,11 @@ function App() {
 
     console.log(process.env.REACT_APP_ENDPOINT);
     
+    
+
     const response = await fetch(`${process.env.REACT_APP_ENDPOINT}inventory`, {
       mode: 'cors'
     });
-
-    // const response = await fetch("https://ccinapd2aj.execute-api.us-east-1.amazonaws.com/main/hello", {
-    //   mode: 'cors'
-    // });
     
     const responseData = await response.text();
     console.log(responseData)
