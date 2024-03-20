@@ -6,7 +6,7 @@ This project is aimed at providing a comprehensive guide and structure to build 
 
 The idea of this project is not to focus on the front end (UX/UI) design but rather on how to build an application using Amplify and AWS SAM.
 
-## About the project
+## About the project.
 
 AWS Amplify enables developers to develop and deploy cloud-powered mobile and web applications. It includes a broad set of tools and services that can create scalable, full stack applications, with a focus on simplicity and ease of use.
 
